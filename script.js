@@ -1,20 +1,20 @@
 function loadJSON(path, success, error)
 {
-    var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest()
     xhr.onreadystatechange = function()
     {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 if (success)
-                    success(JSON.parse(xhr.responseText));
+                    success(JSON.parse(xhr.responseText))
             } else {
                 if (error)
-                    error(xhr);
+                    error(xhr)
             }
         }
     };
-    xhr.open("GET", path, true);
-    xhr.send();
+    xhr.open("GET", path, true)
+    xhr.send()
 }
 
 const root = document.querySelector('.root')
@@ -23,8 +23,8 @@ loadJSON('./energy.json' ,
             //här fortsätter du
             displayData(data)
         },
-        (err)=> { console.error(err); }
-);
+        (err)=> { console.error(err) }
+)
 
 function displayData(json){
     root.innerHTML = `
