@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #d6d6d6;
+  text-align: left;
+  padding: 8px;
+}
+
+td:nth-child(even),
+th:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+img {
+  width: 40px;
+  height: 25px;
+}
