@@ -32,13 +32,12 @@ function displayData(json){
         <th>Country</th>
         <th>Consumption</th>
         <th>Flag</th>
-    </tr>
-    ${json.map(d=> root.innerHTML = `
+    </tr>`
+    json.map(d=> root.innerHTML += `
         <tr>
             <td>${d.country}</td>
             <td>${d.consumption}</td>
             <td><img height="50px" width="100px" src="${d.flag}" /></td>
         </tr>
-    `)}
-    `
+    `)
 }
