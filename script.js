@@ -21,7 +21,12 @@ function loadJSON(path, success, error)
 loadJSON('./energy.json' ,
         (data)=> {
             //här fortsätter du
+            //displayData(data)
          console.log(data);
         },
         (err)=> { console.error(err); }
 );
+
+function displayData(json){
+
+}
